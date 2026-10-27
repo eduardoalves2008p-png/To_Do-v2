@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agendar tarefas</title>
+
+    <!-- Ícones do Google -->
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+    >
+
+    <!-- Materialize CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    >
+
+    <!-- CSS próprio -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="center">Tarefas</h1>
+        <p class="center">Organizando seu dia!</p>
+
+        <ul class="center">
+            <li>
+                <i class="small material-icons">event_note</i>
+                Tarefas concluídas!
+            </li>
+            <li>Não esqueça!</li>
+        </ul>
+
+        <p>Título:</p>
+        <input
+            type="text"
+            class="campoTitulo"
+            placeholder="Digite o título da tarefa"
+        >
+
+        <p>Observações:</p>
+        <input
+            type="text"
+            class="campoObs"
+            placeholder="Digite as observações"
+        >
+
+        <div class="divBotao">
+            <a
+                id="botao"
+                class="btn-floating btn-large waves-effect waves-light red"
+                href="#"
+                title="Adicionar tarefa"
+            >
+                <i class="material-icons">add</i>
+            </a>
+
+            <p>Prioridade:</p>
+<select class="campoPrioridade browser-default">
+    <option value="Baixa">Baixa</option>
+    <option value="Média">Média</option>
+    <option value="Alta">Alta</option>
+</select>
+        </div>
+
+        <section class="tarefas">
+            <table class="highlight">
+                <thead>
+                    <tr>
+                        <th>Tarefa</th>
+                        <th>Observações</th>
+                        <th>Prioridade</th>
+                        <th>Concluir</th>
+                        <th>Apagar</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <!-- jQuery deve ser carregado antes do seu JavaScript -->
+    <script src="js/jquery-3.5.1 (1).js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
